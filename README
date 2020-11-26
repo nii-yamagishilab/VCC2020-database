@@ -61,6 +61,8 @@ vcc2020_database_training_target_task2.zip: Training data of the target speakers
 
 Evaluation data:
 vcc2020_database_evaluation.zip: evaluation data (source speaker's data) released to participants during the challenge
+
+Groundtruth
 vcc2020_database_groundtruth.zip: target speaker’s speech data in English for reference purpose. This was NOT released to participants during the challenge
 
 Transcription:
