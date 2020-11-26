@@ -1,0 +1,136 @@
+——————————————————————————————————————————————————————————————————————————————
+	Voice Conversion Challenge 2020 database
+——————————————————————————————————————————————————————————————————————————————
+
+Authors:
+Zhao Yi(1), Wen-Chin Huang(2), Xiaohai Tian(3), Junichi Yamagishi(1),
+Rohan Kumar Das(3), Tomi Kinnunen(4), Zhenhua Ling(5), Tomoki Toda(2)
+
+Affiliations:
+(1)National Institute of Informatics, Japan 
+(2)Nagoya University, Japan
+(3)National University of Singapore, Singapore
+(4)University of Eastern Finland, Finland
+(5)University of Science and Technology of China, P.R.China
+
+——————————————————————————————————————————————————————————————————————————————
+Introduction:
+
+Voice conversion (VC) is a technique to transform a speaker identity included in a source speech waveform into a different one while preserving linguistic information of the source speech waveform.
+
+In 2016, we have launched the Voice Conversion Challenge (VCC) 2016 [1][2] at Interspeech 2016. The objective of the 2016 challenge was to better understand different VC techniques built on a freely-available common dataset to look at a common goal, and to share views about unsolved problems and challenges faced by the current VC techniques. The VCC 2016 focused on the most basic VC task, that is, the construction of VC models that automatically transform the voice identity of a source speaker into that of a target speaker using a parallel clean training database where source and target speakers read out the same set of utterances in a professional recording studio. 17 research groups had participated in the 2016 challenge. The challenge was successful and it established new standard evaluation methodology and protocols for bench-marking the performance of VC systems.
+
+In 2018, we have launched the second edition of VCC, the VCC 2018 [3]. In the second edition, we revised three aspects of the challenge. First, we educed the amount of speech data used for the construction of participant's VC systems to half. This is based on feedback from participants in the previous challenge and this is also essential for practical applications. Second, we introduced a more challenging task refereed to a Spoke task in addition to a similar task to the 1st edition, which we call a Hub task. In the Spoke task, participants need to build their VC systems using a non-parallel database in which source and target speakers read out different sets of utterances. We then evaluate both parallel and non-parallel voice conversion systems via the same large-scale crowdsourcing listening test. Third, we also attempted to bridge the gap between the ASV and VC communities. Since new VC systems developed for the VCC 2018 may be strong candidates for enhancing the ASVspoof 2015 database, we also asses spoofing performance of the VC systems based on anti-spoofing scores.
+
+In 2020, we launched the third edition of VCC, the VCC 2020 [4][5]. In this third edition, we constructed and distributed a new database for two tasks, intra-lingual semi-parallel and cross-lingual VC. The dataset for intra-lingual VC consists of a smaller parallel corpus and a larger nonparallel corpus, where both of them are of the same language. The dataset for cross-lingual VC consists of a corpus of the source speakers speaking in the source language and another corpus of the
+target speakers speaking in the target language. As a more challenging task than the previous ones, we focused on cross-lingual VC, in which the speaker identity is transformed between two speakers uttering different languages, which requires handling completely nonparallel training over different languages.
+
+This repository contains the training and evaluation data released to participants, target speaker’s speech data in English for reference purpose, and the transcriptions for evaluation data. For more details about the challenge and the listening test results please refer to [4].
+
+[1] Tomoki Toda, Ling-Hui Chen, Daisuke Saito, Fernando Villavicencio, Mirjam Wester, Zhizheng Wu, Junichi Yamagishi "The Voice Conversion Challenge 2016" in Proc. of Interspeech, San Francisco.
+
+[2] Mirjam Wester, Zhizheng Wu, Junichi Yamagishi "Analysis of the Voice Conversion Challenge 2016 Evaluation Results" in Proc. of Interspeech 2016.
+
+[3] Jaime Lorenzo-Trueba, Junichi Yamagishi, Tomoki Toda, Daisuke Saito, Fernando Villavicencio, Tomi Kinnunen, Zhenhua Ling, "The Voice Conversion Challenge 2018: Promoting Development of Parallel and Nonparallel Methods", Proc Speaker Odyssey 2018, June 2018.
+
+[4] Zhao, Yi, Wen-Chin Huang, Xiaohai Tian, Junichi Yamagishi, Rohan Kumar Das, Tomi Kinnunen, Zhenhua Ling, and Tomoki Toda. "Voice conversion challenge 2020: Intra-lingual semi-parallel and cross-lingual voice conversion" Proc. Joint Workshop for the Blizzard Challenge and Voice Conversion Challenge 2020, 80-98, DOI: 10.21437/VCC_BC.2020-14.
+
+If your publish using any of the data in this dataset please cite the above paper [4]. This is a bibtex entry for [4].
+
+@inproceedings{Yi2020,
+  author={Zhao Yi and Wen-Chin Huang and Xiaohai Tian and Junichi Yamagishi and Rohan Kumar Das and Tomi Kinnunen and Zhen-Hua Ling and Tomoki Toda},
+  title={{Voice Conversion Challenge 2020 –- Intra-lingual semi-parallel and cross-lingual voice conversion –-}},
+  year=2020,
+  booktitle={Proc. Joint Workshop for the Blizzard Challenge and Voice Conversion Challenge 2020},
+  pages={80--98},
+  doi={10.21437/VCC_BC.2020-14},
+  url={http://dx.doi.org/10.21437/VCC_BC.2020-14}
+}
+
+——————————————————————————————————————————————————————————————————————————————
+Data structure:
+
+VCC2020 task explanation:
+vcc2020_task_explanation.txt
+
+
+Training data:
+vcc2020_database_training_source.zip: Training data of the source speakers for building intra-lingual and cross-lingual VC systems released to participants during the challenge
+vcc2020_database_training_target_task1.zip: Training data of the target speakers for building intra-lingual systems released to participants during the challenge
+vcc2020_database_training_target_task2.zip: Training data of the target speakers for building cross-lingual systems released to participants during the challenge
+
+Evaluation data:
+vcc2020_database_evaluation.zip: evaluation data (source speaker's data) released to participants during the challenge
+vcc2020_database_groundtruth.zip: target speaker’s speech data in English for reference purpose. This was NOT released to participants during the challenge
+
+Transcription:
+vcc2020_database_transcriptions.zip: transcriptions of training and evaluation data. This was NOT released to participants during the challenge
+
+
+——————————————————————————————————————————————————————————————————————————————
+COPYING:
+
+This Voice Conversion Challenge 2020 database is made available under the Open Database License: http://opendatacommons.org/licenses/odbl/1.0/. Any rights in individual contents of the database are licensed under the Database Contents License: http://opendatacommons.org/licenses/dbcl/1.0/
+
+
+Database Contents License (DbCL)
+
+The Licensor and You agree as follows:
+
+1.0 Definitions of Capitalised Words
+
+The definitions of the Open Database License (ODbL) 1.0 are incorporated by reference into the Database Contents License.
+
+2.0 Rights granted and Conditions of Use<
+
+2.1 Rights granted. The Licensor grants to You a worldwide,
+royalty-free, non-exclusive, perpetual, irrevocable copyright license to
+do any act that is restricted by copyright over anything within the
+Contents, whether in the original medium or any other. These rights
+explicitly include commercial use, and do not exclude any field of
+endeavour. These rights include, without limitation, the right to
+sublicense the work.
+
+2.2 Conditions of Use. You must comply with the ODbL.
+
+2.3 Relationship to Databases and ODbL. This license does not cover any
+Database Rights, Database copyright, or contract over the Contents as
+part of the Database. Please see the ODbL covering the Database for more
+details about Your rights and obligations.
+
+2.4 Non-assertion of copyright over facts. The Licensor takes the
+position that factual information is not covered by copyright. The DbCL
+grants you permission for any information having copyright contained in
+the Contents.
+
+3.0 Warranties, disclaimer, and limitation of liability
+
+3.1 The Contents are licensed by the Licensor “as is” and without any
+warranty of any kind, either express or implied, whether of title, of
+accuracy, of the presence of absence of errors, of fitness for purpose,
+or otherwise. Some jurisdictions do not allow the exclusion of implied
+warranties, so this exclusion may not apply to You.
+
+3.2 Subject to any liability that may not be excluded or limited by law,
+the Licensor is not liable for, and expressly excludes, all liability
+for loss or damage however and whenever caused to anyone by any use
+under this License, whether by You or by anyone else, and whether caused
+by any fault on the part of the Licensor or not. This exclusion of
+liability includes, but is not limited to, any special, incidental,
+consequential, punitive, or exemplary damages. This exclusion applies
+even if the Licensor has been advised of the possibility of such
+damages.
+
+3.3 If liability may not be excluded by law, it is limited to actual and
+direct financial loss to the extent it is caused by proved negligence on
+the part of the Licensor.
+
+——————————————————————————————————————————————————————————————————————————————
+ACKNOWLEDGEMENTS:
+This work was partially supported by JST CREST Grants(JPMJCR18A6, VoicePersonae project, and JPMJCR19A3,CoAugmentation project), Japan, MEXT KAKENHI Grants(16H06302, 17H04687, 17H06101, 18H04120, 18H04112,18KT0051, 19K24373), Japan, the National Natural ScienceFoundation of China (Grant No.61871358) and Human-Robot Interaction Phase 1 (Grant No.19225 00054), National Research Foundation (NRF) Singapore under the National Robotics Programme and Programmatic Grant No.A1687b0033 from the Singapore Government’s Research, In-novation and Enterprise 2020 plan (Advanced Manufacturing and Engineering domain), and Academy of Finland (project no.309629)
+
+The VCC 2020 database is based on the EMIME bilingual corpus below:
+The EMIME bilingual database
+Wester, Mirjam
+The University of Edinburgh, 2010
+http://www.emime.org/participate/emime-bilingual-database.html

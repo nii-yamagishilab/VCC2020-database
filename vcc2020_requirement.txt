@@ -1,0 +1,84 @@
+
+Welcome to all participants in the third Voice Conversion Challenge (VCC 2020)! 
+
+—— Task descriptions —— 
+
+This directory contains the training data for the challenge. There are four source speakers and ten target speakers, listed as:
+
+Source speakers: SEF1, SEF2, SEM1, SEM2
+Target speakers: TEF1, TEF2, TEM1, TEM2, TFF1, TFM1, TGF1, TGM1, TMF1, TMM1
+
+The 'S' and 'T' in the first digit denote 'source' and 'target', respectively.
+The 'E', 'F', 'G' and 'M' in the second digit denote 'English', 'Finnish', 'German' and 'Mandarin', respectively.
+The 'M' and 'F' in the third digit indicate 'male' and 'female', respectively.
+
+Each speaker’s folder has 70 sentences. The naming of the waveform files is as follows: the first digit denotes the language of that waveform, and the ID numbers are used for file numbering. The same file name means the same linguistic content. For example, 'vcc2020_training/SEF1/E10051.wav' and 'vcc2020_training/TEF1/E10051.wav' are a pair of parallel English utterances with the same linguistic content.
+
+TEF1, TEF2, TEM1 and TEM2 are designed to hold a different subset of sentences from those of the source English speakers. ID numbers between 20001 and 20050 are set to be nonparallel. These four speakers should be used for the first task (that is, voice conversion within the same language with limited parallel sentences).
+
+TFF1, TFM1, TGF1, TGM1, TMF1 and TMM1 have their own respective set of sentences, thus totally nonparallel to the source speakers. These speakers should be used for the second task (that is, cross-lingual voice conversion).
+
+SEF1, SEF2, SEM1 and SEM2 are the source speakers for both the first and the second task. 
+
+The waveforms in the directory are in RIFF/WAVE format. The sampling rate is 24 kHz, and they are stored in 16-bit format. Prompts of the waveforms are also available under the 'prompts' sub folder.
+
+If you participate the first task, you are supposed to build voice conversion systems for the following 16 source-target speaker pair combinations, such that the source speaker's voice is converted as if it is uttered by the target speaker while keeping linguistic contents unchanged:
+SEF1 -> TEF1
+SEF1 -> TEF2
+SEF1 -> TEM1
+SEF1 -> TEM2
+SEF2 -> TEF1
+SEF2 -> TEF2
+SEF2 -> TEM1
+SEF2 -> TEM2
+SEM1 -> TEF1
+SEM1 -> TEF2
+SEM1 -> TEM1
+SEM1 -> TEM2
+SEM2 -> TEF1
+SEM2 -> TEF2
+SEM2 -> TEM1
+SEM2 -> TEM2
+
+If you participate in the second task, you are supposed to build voice conversion systems for the following 24 source-target speaker pair combinations, such that the source speaker's voice is converted as if it is uttered by the target speaker while keeping linguistic contents unchanged:
+SEF1 -> TFF1
+SEF1 -> TFM1
+SEF1 -> TGF1
+SEF1 -> TGM1
+SEF1 -> TMF1
+SEF1 -> TMM1
+SEF2 -> TFF1
+SEF2 -> TFM1
+SEF2 -> TGF1
+SEF2 -> TGM1
+SEF2 -> TMF1
+SEF2 -> TMM1
+SEM1 -> TFF1
+SEM1 -> TFM1
+SEM1 -> TGF1
+SEM1 -> TGM1
+SEM1 -> TMF1
+SEM1 -> TMM1
+SEM2 -> TFF1
+SEM2 -> TFM1
+SEM2 -> TGF1
+SEM2 -> TGM1
+SEM2 -> TMF1
+SEM2 -> TMM1
+
+
+Evaluation data will be released on May 11th, 2020. 
+
+More details about the challenge can be found via the official website: http://vc-challenge.org/
+Please also check the rules of VCC 2020: http://vc-challenge.org/rules.html
+
+If you have any questions, feel free to contact the organizers via email: vcc2020@vc-challenge.org
+
+Thank you!
+
+VCC 2020 Organizers
+Tomoki Toda & Wen-Chin Huang (Nagoya University) 
+Junichi Yamagishi (National Institute of Informatics) 
+Zhenhua Ling (University of Science and Technology of China) 
+Tomi Kinnunen (University of Eastern Finland) 
+Rohan Kumar Das & Xiaohai Tian (National University of Singapore)
