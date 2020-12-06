@@ -33,7 +33,7 @@ This repository contains the training and evaluation data released to participan
 
 [3] Jaime Lorenzo-Trueba, Junichi Yamagishi, Tomoki Toda, Daisuke Saito, Fernando Villavicencio, Tomi Kinnunen, Zhenhua Ling, "The Voice Conversion Challenge 2018: Promoting Development of Parallel and Nonparallel Methods", Proc Speaker Odyssey 2018, June 2018.
 
-[4] Zhao, Yi, Wen-Chin Huang, Xiaohai Tian, Junichi Yamagishi, Rohan Kumar Das, Tomi Kinnunen, Zhenhua Ling, and Tomoki Toda. "Voice conversion challenge 2020: Intra-lingual semi-parallel and cross-lingual voice conversion" Proc. Joint Workshop for the Blizzard Challenge and Voice Conversion Challenge 2020, 80-98, DOI: 10.21437/VCC_BC.2020-14.
+[4] Yi Zhao, Wen-Chin Huang, Xiaohai Tian, Junichi Yamagishi, Rohan Kumar Das, Tomi Kinnunen, Zhenhua Ling, and Tomoki Toda. "Voice conversion challenge 2020: Intra-lingual semi-parallel and cross-lingual voice conversion" Proc. Joint Workshop for the Blizzard Challenge and Voice Conversion Challenge 2020, 80-98, DOI: 10.21437/VCC_BC.2020-14.
 
 If your publish using any of the data in this dataset please cite the above paper [4]. This is a bibtex entry for [4].
 
